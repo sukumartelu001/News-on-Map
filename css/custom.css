@@ -1,0 +1,36 @@
+#map {
+	margin-top: auto;
+	height: 80%;
+}
+
+#category-container {
+	width: 100%;
+	margin: 0 auto;	
+	margin-bottom: 5px;
+}
+
+.category {
+	border-style: none;
+	border-right-style: solid;
+	padding-right: 10px;
+	padding-left: 10px;
+	text-align: center;
+}
+
+.category a {
+	text-decoration: none;
+}
+
+.baloon {
+text-decoration: none;
+
+}
+
+.active {
+	color: #ffa500;
+}
+
+.internet {
+	border-style: none;
+	border-right-style: none;
+}
