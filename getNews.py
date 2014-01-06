@@ -98,7 +98,7 @@ for i in range(1,3,1):
 
 print 'INDENT:', json.dumps(news_list, sort_keys=True, indent=2)
 
-#write contents of 'news' to data.json file
+#write contents of 'news' to json file
 with open('internet.json', mode='w') as f:
   json.dump(news_list, f)
 
