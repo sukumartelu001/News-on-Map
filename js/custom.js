@@ -15,13 +15,15 @@ Array.prototype.unique =
   };
 
 //Initialize the maps
-var map = L.map('map').setView([28.63135, 77.2494606], 2);
+var map = L.map('map').setView([51.505, -0.09], 13);
 
-//Load maps
-L.tileLayer('http://{s}.tile.cloudmade.com/BC9A493B41014CAABB98F0471D759707/997/256/{z}/{x}/{y}.png', {
-		maxZoom: 18,
-    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
+
+L.marker([51.5, -0.09]).addTo(map)
+    .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
+    .openPopup();
 
 
 var mydata = JSON.stringify(data);
